@@ -6,23 +6,23 @@ So everything in Boto3 when you query S3 is given in Dictionaries. So I'm going 
 Dictionaries are delimited with curly braces and contain a comma separated key-value pairs with each pair tied together by a colon.
 
 '''
-	Birthdays: = {"John": "16","David": "24"}
-	>>> Birthdays["John"]
-	'16'
+Birthdays: = {"John": "16","David": "24"}
+>>> Birthdays["John"]
+'16'
 '''
 
 
 Copying Dict:
 '''
-	Birthdays = Birthdays.newdict()
-	newdict = dict(Birthdays)
+Birthdays = Birthdays.newdict()
+newdict = dict(Birthdays)
 '''
 
 Updating Dict:
 '''
-	Birthday["Samantha"] = 31
-	>>> Birthdays
-	{"John": "16","David": "24", "Samantha": "31"}
+Birthday["Samantha"] = 31
+>>> Birthdays
+{"John": "16","David": "24", "Samantha": "31"}
 '''
 
 
