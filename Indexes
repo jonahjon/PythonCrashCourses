@@ -1,0 +1,16 @@
+
+Indexing is a way to call values into a file later on, simply by refrencing a defined index
+In this situation we desribed a few variables, then called them in a print script.
+
+```
+eggs = 'great'
+AWS_TARGET_REGION = 'us-east-1'
+SOURCE_ROUTE_TABLE_ID = 'rt-xxxxxxx'
+
+
+		'routeTableID=$(aws ec2 create-route-table --region {0} --vpc-id {1} --output text | grep "^ROUTETABLE" | cut -f2)\n' \
+		'echo "Route table: $routeTableID"\n'.format(
+			AWS_TARGET_REGION,
+			SOURCE_ROUTE_TABLE_ID
+	))
+  ```
